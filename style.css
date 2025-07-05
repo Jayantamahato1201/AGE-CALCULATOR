@@ -1,0 +1,95 @@
+/* Add Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto:wght@400;500&display=swap');
+
+body {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 32px 24px 24px 24px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    border: 2px solid #fcb6c2;
+    transition: box-shadow 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0 12px 40px rgba(252, 182, 194, 0.18);
+}
+
+h1 {
+    text-align: center;
+    color: #ff5e62;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+label {
+    font-weight: 500;
+    color: #ff9966;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin-bottom: 2px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1.5px solid #fcb6c2;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Roboto', Arial, sans-serif;
+    transition: border 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+
+input[type="number"]:focus {
+    border: 1.5px solid #ff5e62;
+    box-shadow: 0 0 6px #ffb88c55;
+    background: #fff7f9;
+}
+
+button {
+    margin-top: 18px;
+    padding: 12px;
+    background: linear-gradient(90deg, #ff9966 0%, #ff5e62 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px #ffb88c33;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ff5e62 0%, #ff9966 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+#result {
+    margin-top: 28px;
+    font-size: 1.15rem;
+    color: #ff5e62;
+    text-align: center;
+    min-height: 28px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
